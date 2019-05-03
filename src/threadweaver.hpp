@@ -96,7 +96,7 @@ struct ThreadScheduler
     ThreadScheduler(unsigned int amountOfThreads = 1) : threads(amountOfThreads, Thread{})
     {
     }
-    void waitUntilAllClosed()
+    void stopThreads()
     {
         for (auto &i : threads)
             i.stop();
@@ -125,7 +125,7 @@ struct ThreadScheduler
     }
     ~ThreadScheduler()
     {
-        waitUntilAllClosed();
+        stopThreads();
     }
 
   private:
