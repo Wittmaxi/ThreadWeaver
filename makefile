@@ -1,3 +1,5 @@
+install:
+	sudo cp src/threadweaver.hpp /usr/include/threadweaver
 
 build_tests:
 	clang++ -std=c++17 -lpthread src/testing.cpp -o tests
