@@ -6,7 +6,7 @@ int main () {
 
     for (int i = 0; i < 1000; i++) 
         ts.runFunction([] () {
-            for (volatile long j = 0; j < 100000000; j++) {
+            for (volatile long j = 0; j < 10000000; j++) {
             }
         });
 
