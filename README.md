@@ -3,6 +3,8 @@ A threadscheduler that was written with efficiency in mind.
 This tool is meant to allow you to feed the thread-scheduler with any amount of functions which will be then into an already existing thread - thus knowing the amount of threads in advance and 
 avoiding the overhead caused by the creation of new threads. 
 
+*Threadweaver is currently in developement and not usable as-is. It it neither threadsafe nor particularly efficient due to it using spinlocks.*
+
 # Installation
 Simply running 
 ```console
